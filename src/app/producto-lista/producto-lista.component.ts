@@ -38,7 +38,7 @@ export class ProductoListaComponent {
   eliminarProducto(id: number) {
     this.productoServicio.eliminarProducto(id).subscribe({
         next: (datos) => this.obtenerProductos(),
-        error: (errores) => console.log(errores);
+        error: (errores) => console.log(errores)
       });
   }
 }
